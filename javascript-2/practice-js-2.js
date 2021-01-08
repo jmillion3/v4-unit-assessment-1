@@ -67,7 +67,10 @@ let status = {
 */
 
 //CODE HERE
-
+let add = {
+    description: "add moves the files being modified to staged before commit",
+    code: "git add ."
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -75,7 +78,10 @@ let status = {
 */
 
 //CODE HERE
-
+let commit = {
+    description: "commit saves changes to git and needs a message",
+    code: "git commit -m ''"
+}
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'addRemote' with 'description' and 'code' properties
@@ -91,3 +97,8 @@ let status = {
 */
 
 //CODE HERE
+let push = {
+    description: "Push allows you to send your git files from your computer to an online repository",
+    code: "git push origin master"
+
+}
