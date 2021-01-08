@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+}
+
+header {
+	background-color: rgb(56, 221, 221);
+}
+
+h1 {
+	padding: 25px;
+}
+
+h2 {
+	margin: 25px 25px 0 25px;
+}
+
+section {
+	margin: 0 25px;
+	border: dotted black 2px;
+	/* box-sizing: border-box; */
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+
+/* * TOP */
+.rectangles > div {
+	display: inline-block;
+	margin: 20px;
+	border-radius: 1%;
+	box-sizing: border-box;
+}
+
+#box1 {
+	background: darkviolet;
+	border: solid red 3px;
+	height: 100px;
+	width: 200px;
+}
+#box2 {
+	background: blue;
+	border: solid black 1px;
+	box-shadow: 5px 5px 5px black;
+	height: 100px;
+	width: 100px;
+}
+#box3 {
+	background-color: pink;
+	border: solid black 1px;
+	height: 200px;
+	width: 200px;
+}
+
+/* * MID */
+.circles > div {
+	border-radius: 50%;
+	border: solid black 1px;
+}
+
+#circle1 {
+	height: 100px;
+	width: 100px;
+	margin: 5px 0 0 25px;
+}
+#circle2 {
+	height: 120px;
+	width: 120px;
+	margin-left: 15px;
+}
+#circle3 {
+	height: 150px;
+	width: 150px;
+	margin: 0 0 5px 5px;
+}
+
+.eyes {
+	height: 20px;
+	float: left;
+	margin: 20px 0 3px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+.nose {
+	height: 20px;
+	float: left;
+	margin: 10px 0 0 15px;
+}
+
+.button {
+	height: 20px;
+	margin: 10px 0 3px 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+/* * BOT */
+.everything {
+	margin: 5px;
+}
+
+#square1 {
+	background-color: beige;
+	border: solid black 1px;
+	height: 230px;
+	width: 230px;
+}
+
+#round1 {
+	background-color: green;
+	border: solid black 1px;
+	border-radius: 50%;
+	height: 190px;
+	width: 190px;
+}
+
+#square2 {
+	background-color: brown;
+	height: 120px;
+	width: 120px;
+	text-align: right;
+	margin: 30px;
+}
+
+#round2 {
+	background-color: blue;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+#nemo {
+	height: 40px;
+	padding: 20px;
+}
