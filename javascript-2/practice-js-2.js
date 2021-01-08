@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = "Git is a storage system that keeps track of changes and builds checkpoints for projects"
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = "GitHub is a cloud git system that allows you to manage and track changes with multiple users over the internet"
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,10 @@
 */
 
 //CODE HERE
-
+let init = {
+    description: "This tells git to initial and start tracking changes of the items being initialized",
+    code: "git init"
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +45,10 @@
 */
 
 //CODE HERE
-
+let clone = {
+    description: "This allows a user to copy another file",
+    code: "git clone"
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +56,10 @@
 */
 
 //CODE HERE
-
+let status = {
+    description: "Shows the staging status of items in your directory",
+    code: "git status"
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
