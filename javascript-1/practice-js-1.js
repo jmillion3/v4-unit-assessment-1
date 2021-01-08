@@ -113,7 +113,13 @@ let middleNums = numbers.splice(1,3)
 */
 
 //CODE HERE
-
+let me = {
+  firstName: "Josh",
+  state: "Utah",
+  age: 29,
+  greeter: function(){
+    return `Hello! My name is ${me.firstName} and I live in ${me.state}`},
+}
 //////////////////PROBLEM 12////////////////////
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
@@ -128,7 +134,24 @@ let middleNums = numbers.splice(1,3)
 */
 
 // CODE HERE
+let arr = [1, 10, 100, 1000]
 
+function bigOrSmall(arr){
+  
+  for (let i = 0; i < arr.length; i++){
+  
+    if (arr[i] >= 100){
+      answer.push("big")
+    } else {
+      answer.push("small")
+    }
+
+  }
+  let answers = ['']
+  // return arr
+}
+bigOrSmall(arr)
+// console.log(i)
 //////////////////PROBLEM 13////////////////////
 /* 
   Create a function called 'arrayReverser' that takes in one parameter, 'arr'. 
@@ -165,16 +188,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global', 'outer', 'functional']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -184,7 +207,6 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
-
 //////////////////PROBLEM 16////////////////////
 /* 
   Write a function called isItBob that takes in two arguments: an object and a callback function. 
