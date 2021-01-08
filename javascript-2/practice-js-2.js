@@ -100,5 +100,4 @@ let commit = {
 let push = {
     description: "Push allows you to send your git files from your computer to an online repository",
     code: "git push origin master"
-
 }
