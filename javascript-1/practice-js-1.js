@@ -2,17 +2,17 @@
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
 //CODE HERE 
-
+const myName = "Josh"
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
-
+const faveNum = 3
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
-
+const lovesCode = true
 //////////////////PROBLEM 4////////////////////
 /*
   Create a function called 'sum' that takes in two parameters, 'num1' and 'num2'. 
@@ -20,7 +20,11 @@
 */
 
 //CODE HERE
+function sum(num1, num2){
+  return num1 + num2
+}
 
+sum(1, 4)
 //////////////////PROBLEM 5////////////////////
 /*
   Create a function called 'trueOrFalse' that takes in a single parameter called 'data'. 
@@ -30,6 +34,17 @@
 */
 
 //CODE HERE
+function trueOrFalse (data){
+  if (1 === 1) {
+    return true
+  } else {
+    return false
+  }
+} 
+let data = 1
+
+trueOrFalse(data)
+
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -40,7 +55,14 @@
 */
 
 //CODE HERE
-
+function oddChecker(num){
+  if(num % 2 === 0){
+    return "the number is even"
+  } else {
+    return "the number is odd"
+  }
+}
+oddChecker(1)
 //////////////////PROBLEM 7////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -49,7 +71,10 @@
 */
 
 //CODE HERE
-
+function iLove (name, love){
+  return `${name} loves ${love}`
+}
+iLove("Josh", "anime")
 
 //////////////////PROBLEM 8////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
@@ -57,12 +82,12 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
-
+let colorCopy = faveColors.slice(0)
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
-
+let push = colorCopy.push("orange")
 //////////////////PROBLEM 10////////////////////
 /*
   Using an array method, create a new array called 'middleNums' from the 
@@ -72,7 +97,7 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-
+let middleNums = numbers.splice(1,3)
 //////////////////PROBLEM 11////////////////////
 /*
   Create an object called 'me' that has the following keys: 
