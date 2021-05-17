@@ -2,7 +2,7 @@
 /* Create an array called 'groceries' that contains three grocery items of your choice as strings. */
 
 //CODE HERE
-let groceries = ["salmon", "bread", "juice", "item"]
+let groceries = ["salmon", "bread", "juice"]
 //////////////////STEP 2////////////////////
 /* Create a variable called 'yourName' that is assigned the value of your name as a string. */
 
@@ -17,7 +17,7 @@ let yourName = "Josh"
 */
 
 //CODE HERE
-let x = "Joseph"
+let x = yourName
 function setGroceryListTitle(x){
     return `${x}'s Grocery List`
 }
@@ -32,8 +32,10 @@ setGroceryListTitle(x)
 
 //CODE HERE
 function addItem(item){
+    groceries.push(item)
     displayData()
 }
+addItem("bean")
 //////////////////STEP 5////////////////////
 /*
     Create a function called 'removeItem' that takes in one parameter called 'index'. 
@@ -44,9 +46,10 @@ function addItem(item){
 
 //CODE HERE
 function removeItem(index){
-    groceries.splice(3, 1)
+    groceries.splice(4, 1)
     displayData()
 }
+removeItem(index)
 //////////////////STEP 6////////////////////
 /*
     Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, 
@@ -59,15 +62,40 @@ function removeItem(index){
 */
 
 //CODE HERE
-function checkGroceryCount(){
-    for (let i = 0; i < groceries.length; i++){
-        if (i > 5){
-            return "That looks like a big trip"
-        } else if (i === 1) {
-            return "1 item"
-        } else {
-            return `${groceries.length} items`
-        }
+// function checkGroceryCount(){
+//     for (let i = 0; i < groceries.length; i++){
+//         if (i > 5){
+//             return "That looks like a big trip"
+//         } else if (i === 1) {
+//             return "1 item"
+//         } else {
+//             return `${groceries.length} items`
+//         }
+//     }
+// }
+
+// function checkGroceryCount(){
+//     console.log(groceries)
+//     for (let i = 0; i < groceries.length; i++){
+//         console.log(i)
+//         if(i > 5){
+//             return "That looks like a big trip"
+//         }else if(i === 1){
+//             return "1 item"
+//         }else{
+//             return `${groceries.length} items`
+//         }
+//     }
+// }
+
+function checkGroceryCount() {
+    let num = groceries.length
+    if(num > 5) {
+        return "That looks like a big trip"
+    }else if(num === 1) {
+        return "1 item"
+    }else{
+        return num + " items"
     }
 }
 

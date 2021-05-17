@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-let gitDefinition = "Git is a storage system that keeps track of changes and builds checkpoints for projects"
+const gitDefinition = "Git is a storage system that keeps track of changes and builds checkpoints for projects"
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@ let gitDefinition = "Git is a storage system that keeps track of changes and bui
 */
 
 //CODE HERE
-let gitHubDefinition = "GitHub is a cloud git system that allows you to manage and track changes with multiple users over the internet"
+const gitHubDefinition = "GitHub is a cloud git system that allows you to manage and track changes with multiple users over the internet"
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,7 @@ let gitHubDefinition = "GitHub is a cloud git system that allows you to manage a
 */
 
 //CODE HERE
-let init = {
+const init = {
     description: "This tells git to initial and start tracking changes of the items being initialized",
     code: "git init"
 }
@@ -45,7 +45,7 @@ let init = {
 */
 
 //CODE HERE
-let clone = {
+const clone = {
     description: "This allows a user to copy another file",
     code: "git clone"
 }
@@ -56,7 +56,7 @@ let clone = {
 */
 
 //CODE HERE
-let status = {
+const status = {
     description: "Shows the staging status of items in your directory",
     code: "git status"
 }
@@ -67,7 +67,7 @@ let status = {
 */
 
 //CODE HERE
-let add = {
+const add = {
     description: "add moves the files being modified to staged before commit",
     code: "git add ."
 }
@@ -78,7 +78,7 @@ let add = {
 */
 
 //CODE HERE
-let commit = {
+const commit = {
     description: "commit saves changes to git and needs a message",
     code: "git commit -m ''"
 }
@@ -89,7 +89,10 @@ let commit = {
 */
 
 //CODE HERE
-
+const addRemote = {
+    description: "add remote origin can change origin from main to master or whatever",
+    code: "git remote add origin"
+}
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
